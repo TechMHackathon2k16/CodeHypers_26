@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" id="WebApp_ID" version="3.0">
+  <display-name>ParkIt</display-name>
+  <welcome-file-list>
+    <welcome-file>index.jsp</welcome-file>
+  </welcome-file-list>
+  <servlet>
+    <servlet-name>doSignUp</servlet-name>
+    <servlet-class>com.parkit.servlet.SignUpServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>doSignUp</servlet-name>
+    <url-pattern>/doSignUp</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>getCount</servlet-name>
+    <servlet-class>com.parkit.servlet.GetAvailabilityofPlace</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>getCount</servlet-name>
+    <url-pattern>/getCount</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>doSignIn</servlet-name>
+    <servlet-class>com.parkit.servlet.SignInServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>doSignIn</servlet-name>
+    <url-pattern>/doSignIn</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>LoadPlaces</servlet-name>
+    <servlet-class>com.parkit.servlet.LoadPlaces</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>LoadPlaces</servlet-name>
+    <url-pattern>/LoadPlaces</url-pattern>
+  </servlet-mapping>
+</web-app>
